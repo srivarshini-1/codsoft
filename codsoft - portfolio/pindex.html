@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="ppstyles.css">
+    <script>
+        // Dark Mode Toggle Script
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+            localStorage.setItem('theme', theme);
+        }
+
+        // Retain Theme Preference
+        window.onload = () => {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark-mode');
+            }
+        };
+    </script>
+</head>
+<body>
+    <header class="portfolio-header">
+        <nav class="navbar">
+            <div class="logo"><h4>My Portfolio</h4></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="toggle-mode" onclick="toggleDarkMode()">Toggle Mode</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="profile-container">
+                <img src="C:\Users\bhoom\OneDrive\Desktop\codsoft - portfolio\me - Copy.jpg" alt="me" class="profile-pic">
+                <h1>Hey It's Me,</h1>
+                <h1> <span class="highlight">Sreepathi SriVarshini</span></h1>
+                <p>A passionate student with skills in various programming languages continuously learning new technologies,dedicated to building amazing<span class="highlight"></span> web experiences</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <p>I am a third-year B.Tech IT student with a strong passion for technology and innovation. With a foundation in Java, Python, and HTML, I am keen on exploring emerging fields like artificial intelligence, machine learning. My academic journey has allowed me to work on projects, enhancing both my technical and problem-solving skills.</p>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <h3>Python</h3>
+                <p>Python beginner, eager to learn and innovate.</p>
+            </div>
+            <div class="skill-card">
+              <h3>Java</h3>
+              <p>Skilled in Java with a strong grasp of its syntax, object-oriented principles.</p>
+          </div>
+                <div class="skill-card">
+                    <h3>HTML</h3>
+                    <p>Experienced in creating semantic and accessible HTML structures.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>CSS</h3>
+                    <p>Skilled in designing responsive and visually appealing layouts.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <p>Proficient in creating interactive and dynamic web applications.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>React</h3>
+                    <p>Knowledgeable in building reusable components and single-page applications.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h2>Weather Forecasting</h2>
+                    <p>A project that predicts weather conditions using historical data and algorithms, providing accurate and timely forecasts. It aims to assist users in planning daily activities based on real-time weather updates.</p>
+                </div>
+                <div class="project-card">
+                    <h2>Face recognition Attendance system</h2>
+                    <p>A system designed to streamline attendance tracking by leveraging face recognition technology, ensuring accuracy and reducing manual effort. It enhances efficiency and security in monitoring attendance records.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+              <p> email address - sreepathisrivarshini@gmail.com </p> <p>phone No. - 8764289523</p>
+        </section>
+    </main>
+
+    <footer class="portfolio-footer">
+        <p>© 2024 Sreepathi Srivarshini. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
