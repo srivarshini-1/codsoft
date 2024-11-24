@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+/* Hero Section */
+.hero {
+  /*background: linear-gradient(to right, #4b134f, #c94b4b);-->*/
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  height: 40vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.hero h1 {
+  font-size: 3rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.hero button {
+  background-color: white;
+  color: #c94b4b;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.hero button:hover {
+  background-color: #f1f1f1;
+}
+
+/* Programs Section */
+.programs {
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+.programs h2 {
+  color: #4b134f;
+  margin-bottom: 30px;
+}
+.program {
+  display: inline-block;
+  width: 30%;
+  margin: 0 1.5%;
+  text-align: center;
+}
+.program img {
+  width: 100%;
+  border-radius: 10px;
+}
+.program h3 {
+  color: #c94b4b;
+  margin: 15px 0 10px;
+}
+.program button {
+  padding: 8px 15px;
+  background-color: #4b134f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 50px 20px;
+  text-align: center;
+}
+.testimonials h2 {
+  color: #4b134f;
+  margin-bottom: 30px;
+}
+.testimonial {
+  margin: 20px auto;
+  max-width: 600px;
+  font-style: italic;
+}
+.testimonial span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+.contact h2 {
+  color: #c94b4b;
+  margin-bottom: 20px;
+}
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.contact input, .contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.contact button {
+  padding: 10px 20px;
+  background-color: #4b134f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
